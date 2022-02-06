@@ -1,12 +1,12 @@
 {
     "ietf-interfaces:interface": {
         "name": "GigabitEthernet2",
-        "description": "Wide Area Network",
+        "description": "Test Interface json",
         "enabled": true,
         "ietf-ip:ipv4": {
             "address": [
                 {
-                    "ip": "172.16.0.2",
+                    "ip": "172.16.0.5",
                     "netmask": "255.255.255.0"
                 }
             ]
