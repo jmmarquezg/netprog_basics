@@ -2,7 +2,7 @@
     "ietf-interfaces:interface": {
         "name": "GigabitEthernet2",
         "description": "Test Interface json",
-        "enabled": false,
+        "enabled": true,
         "ietf-ip:ipv4": {
             "address": [
                 {
