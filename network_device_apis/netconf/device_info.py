@@ -60,3 +60,10 @@ apic = {
              "port": 443
          }
 
+# AutoPod CAT CAT BGL C2960-C3750-X POD
+switch = {
+          "address": "10.126.209.10",
+          "username": "admin",
+          "password": "cisco!123",
+          "port": 22,
+          }
