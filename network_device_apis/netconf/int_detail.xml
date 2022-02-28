@@ -1,2 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:1f672f8c-8c5d-4cd6-a314-87038189b06c" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><data><interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"><interface><name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>GigabitEthernet2</name><description>DevNet Test</description><type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type><enabled>true</enabled><ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"><address><ip>10.255.255.1</ip><netmask>255.255.255.0</netmask></address></ipv4><ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"></ipv6></interface></interfaces><interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"><interface><name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>GigabitEthernet2</name><type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type><admin-status>down</admin-status><oper-status>lower-layer-down</oper-status><last-change>2022-02-27T03:24:16.000108+00:00</last-change><if-index>2</if-index><phys-address>00:50:56:bf:ea:76</phys-address><speed>1024000000</speed><statistics><discontinuity-time>2022-02-22T11:54:54.000043+00:00</discontinuity-time><in-octets>0</in-octets><in-unicast-pkts>0</in-unicast-pkts><in-broadcast-pkts>0</in-broadcast-pkts><in-multicast-pkts>0</in-multicast-pkts><in-discards>0</in-discards><in-errors>0</in-errors><in-unknown-protos>0</in-unknown-protos><out-octets>0</out-octets><out-unicast-pkts>0</out-unicast-pkts><out-broadcast-pkts>0</out-broadcast-pkts><out-multicast-pkts>0</out-multicast-pkts><out-discards>0</out-discards><out-errors>0</out-errors></statistics></interface></interfaces-state></data></rpc-reply>
+<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:ad4371ae-359e-4374-a58d-4767ad8c5b53" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <data>
+        <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+            <interface>
+                <name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>GigabitEthernet2</name>
+                <description>DevNet Test</description>
+                <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+                <enabled>true</enabled>
+                <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                    <address>
+                        <ip>10.255.255.1</ip>
+                        <netmask>255.255.255.0</netmask>
+                    </address>
+                </ipv4>
+                <ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"></ipv6>
+            </interface>
+        </interfaces>
+        <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+            <interface>
+                <name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>GigabitEthernet2</name>
+                <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+                <admin-status>down</admin-status>
+                <oper-status>lower-layer-down</oper-status>
+                <last-change>2022-02-27T03:24:16.000393+00:00</last-change>
+                <if-index>2</if-index>
+                <phys-address>00:50:56:bf:ea:76</phys-address>
+                <speed>1024000000</speed>
+                <statistics>
+                    <discontinuity-time>2022-02-22T11:54:54.000328+00:00</discontinuity-time>
+                    <in-octets>0</in-octets>
+                    <in-unicast-pkts>0</in-unicast-pkts>
+                    <in-broadcast-pkts>0</in-broadcast-pkts>
+                    <in-multicast-pkts>0</in-multicast-pkts>
+                    <in-discards>0</in-discards>
+                    <in-errors>0</in-errors>
+                    <in-unknown-protos>0</in-unknown-protos>
+                    <out-octets>0</out-octets>
+                    <out-unicast-pkts>0</out-unicast-pkts>
+                    <out-broadcast-pkts>0</out-broadcast-pkts>
+                    <out-multicast-pkts>0</out-multicast-pkts>
+                    <out-discards>0</out-discards>
+                    <out-errors>0</out-errors>
+                </statistics>
+            </interface>
+        </interfaces-state>
+    </data>
+</rpc-reply>
