@@ -18,7 +18,7 @@ __license__ = "MIT"
 # https://devnetsandbox.cisco.com/RM/Diagram/Index/27d9747a-db48-4565-8d44-df318fce37ad?diagramType=Topology
 ios_xe1 = {
              "address": "ios-xe-mgmt.cisco.com",
-             "port": 10000,
+             "port": 830,
              "username": "developer",
              "password": "C1sco12345"
            }
@@ -27,7 +27,7 @@ ios_xe1 = {
 # https://devnetsandbox.cisco.com/RM/Diagram/Index/38ded1f0-16ce-43f2-8df5-43a40ebf752e?diagramType=Topology
 ios_xe_latest = {
              "address": "ios-xe-mgmt-latest.cisco.com",
-             "port": 10000,
+             "port": 830,
              "username": "developer",
              "password": "C1sco12345"
           }          

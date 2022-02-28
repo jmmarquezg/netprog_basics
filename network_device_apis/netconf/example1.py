@@ -16,15 +16,16 @@ __author_email__ = "hapresto@cisco.com"
 __copyright__ = "Copyright (c) 2016 Cisco Systems, Inc."
 __license__ = "MIT"
 
-from device_info import ios_xe1
+from device_info import ios_xe_latest
 from ncclient import manager
 
 if __name__ == '__main__':
-    with manager.connect(host=ios_xe1["address"], port=ios_xe1["port"],
-                         username=ios_xe1["username"],
-                         password=ios_xe1["password"],
+    with manager.connect(host=ios_xe_latest["address"], port=ios_xe_latest["port"],
+                         username=ios_xe_latest["username"],
+                         password=ios_xe_latest["password"],
                          hostkey_verify=False) as m:
 
         print("Here are the NETCONF Capabilities")
+        print(type(m))
         for capability in m.server_capabilities:
             print(capability)
