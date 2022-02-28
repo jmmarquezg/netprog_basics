@@ -3,17 +3,18 @@
 Learning Series: Network Programmability Basics
 Module: Network Device APIs
 Lesson: Goodbye SNMP hello NETCONF
-Author: Hank Preston <hapresto@cisco.com>
 
-example2.py
+example4.py
 Illustrate the following concepts:
 - Send <get> to retrieve config and state data
 - Process and leverage XML within Python
 - Report back current state of interface
+- Create new file to store reply
+- Function definition to perform all the tasks
 """
 
-__author__ = "Hank Preston"
-__author_email__ = "hapresto@cisco.com"
+__author__ = "Jose Marquez"
+__author_email__ = "jmarque2@cisco.com"
 __copyright__ = "Copyright (c) 2016 Cisco Systems, Inc."
 __license__ = "MIT"
 
