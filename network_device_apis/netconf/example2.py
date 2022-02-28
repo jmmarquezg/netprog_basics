@@ -17,9 +17,10 @@ __author_email__ = "hapresto@cisco.com"
 __copyright__ = "Copyright (c) 2016 Cisco Systems, Inc."
 __license__ = "MIT"
 
-from device_info import ios_xe1
+from device_info import ios_xe1 
 from ncclient import manager
 import xmltodict
+from pprint import pprint
 
 # NETCONF filter to use
 netconf_filter = open("filter-ietf-interfaces.xml").read()
@@ -33,6 +34,11 @@ if __name__ == '__main__':
         # Get Configuration and State Info for Interface
         netconf_reply = m.get(netconf_filter)
 
+        # Creating  file to store the xml response
+        new_file = "int_detail.xml"
+        with open(new_file, "w") as f:
+            f.write(netconf_reply.xml)
+        
         # Process the XML and store in useful dictionaries
         intf_details = xmltodict.parse(netconf_reply.xml)["rpc-reply"]["data"]
         intf_config = intf_details["interfaces"]["interface"]
@@ -46,3 +52,4 @@ if __name__ == '__main__':
         print("  MAC Address: {}".format(intf_info["phys-address"]))
         print("  Packets Input: {}".format(intf_info["statistics"]["in-unicast-pkts"]))
         print("  Packets Output: {}".format(intf_info["statistics"]["out-unicast-pkts"]))
+
