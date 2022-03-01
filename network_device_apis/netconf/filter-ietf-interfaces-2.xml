@@ -1,12 +1,12 @@
 <filter>
   <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
     <interface>
-      <name>Loopback11</name>
+      <name>Loopback1</name>
     </interface>
   </interfaces>
   <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
     <interface>
-      <name>Loopback11</name>
+      <name>Loopback1</name>
     </interface>
   </interfaces-state>
 </filter>
