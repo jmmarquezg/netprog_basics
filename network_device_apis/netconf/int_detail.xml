@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:ad4371ae-359e-4374-a58d-4767ad8c5b53" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:903ad0ae-a6df-426b-94f3-1df266f2ab45"
+    xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
     <data>
         <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
             <interface>
                 <name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>GigabitEthernet2</name>
-                <description>DevNet Test</description>
+                <description>Configured by RESTCONF testies</description>
                 <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
                 <enabled>true</enabled>
                 <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
                     <address>
-                        <ip>10.255.255.1</ip>
+                        <ip>10.10.255.1</ip>
+                        <netmask>255.255.255.0</netmask>
+                    </address>
+                    <address>
+                        <ip>10.10.255.1</ip>
                         <netmask>255.255.255.0</netmask>
                     </address>
                 </ipv4>
@@ -22,12 +27,12 @@
                 <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
                 <admin-status>down</admin-status>
                 <oper-status>lower-layer-down</oper-status>
-                <last-change>2022-02-27T03:24:16.000393+00:00</last-change>
+                <last-change>2022-02-27T03:24:16.000476+00:00</last-change>
                 <if-index>2</if-index>
                 <phys-address>00:50:56:bf:ea:76</phys-address>
                 <speed>1024000000</speed>
                 <statistics>
-                    <discontinuity-time>2022-02-22T11:54:54.000328+00:00</discontinuity-time>
+                    <discontinuity-time>2022-02-22T11:54:54.000411+00:00</discontinuity-time>
                     <in-octets>0</in-octets>
                     <in-unicast-pkts>0</in-unicast-pkts>
                     <in-broadcast-pkts>0</in-broadcast-pkts>
