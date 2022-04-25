@@ -1,4 +1,4 @@
-! /usr/bin/env python
+#!/usr/bin/env python
 """
 Learning Series: Network Programmability Basics
 Module: Network Controllers
@@ -17,9 +17,9 @@ Illustrate the following concepts:
 from device_info import apic
 from acitoolkit.acitoolkit import *
 
-session = Session(apic['host'],
-                  apic['username'],
-                  apic['password'])
+session = Session("https://sandboxapicdc.cisco.com",
+                  "admin",
+                  "!v3G@!4@Y")
 session.login()
 session.logged_in()
 

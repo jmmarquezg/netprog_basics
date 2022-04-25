@@ -16,11 +16,7 @@ Illustrate the following concepts:
 from device_info import apic
 from acitoolkit.acitoolkit import *
 from pprint import pprint
-
-# Establish Session Object and Log into APIC
-session = Session(apic['host'],
-                  apic['username'],
-                  apic['password'])
+ 
 session.login()
 session.logged_in()
 
